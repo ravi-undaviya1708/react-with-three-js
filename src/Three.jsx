@@ -3,7 +3,7 @@ import { Canvas, useFrame } from "react-three-fiber";
 import * as THREE from "three";
 import "./App.css";
 
-import dice from "./assets/dice.png";
+import five from "./assets/five.png";
 
 const Box = (props) => {
   // This reference will give us direct access to the mesh
@@ -17,7 +17,7 @@ const Box = (props) => {
     mesh.current.rotation.x = mesh.current.rotation.y += 0.01;
   });
 
-  const texture = useMemo(() => new THREE.TextureLoader().load(dice), []);
+  const texture = useMemo(() => new THREE.TextureLoader().load(five), []);
 
   return (
     <mesh
